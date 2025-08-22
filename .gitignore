@@ -1,0 +1,108 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+
+# Large data files (exclude from git, use Git LFS or external storage)
+*.pkl
+datasets/raw/
+datasets/processed/
+
+# Model checkpoints and training outputs (keep structure, exclude large files)
+models/checkpoints/
+models/experiments/
+*.pth
+
+# Artifacts - keep directory structure but exclude large model files
+artifacts/*.npy
+artifacts/*.pkl
+artifacts/*.parquet
+artifacts/*.pth
+artifacts/*.txt
+# Keep README and small config files
+!artifacts/README.md
+!artifacts/*.json
+!artifacts/*.yaml
+
+# Sample data - keep small test files, exclude large datasets
+data/raw/
+data/processed/
+!data/sample/
+!data/examples/
+!data/README.md
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Azure
+local.settings.json
+.azure/
+.func/
+
+# Logs
+*.log
+logs/
+.logs/
+
+# Environment and secrets
+.env
+.env.local
+.env.production
+*.env
+secrets/
+config/secrets.json
+*.key
+*.pem
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# Documentation build
+docs/_build/
+docs/site/
+.mkdocs.yml
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Development tools and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Deployment specific
+deployment/*/local.settings.json
+deployment/*/publish/
+*.publish.xml
+
+# Cache directories
+.cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
